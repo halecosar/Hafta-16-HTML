@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<h1>Form Örneği</h1>
+<body>
+   
+    <style>
+        body{
+            background-color: rgb(193, 231, 231);
+        }
+    </style>
+    <form action="/submit_form.html" method="get">
+
+        <!-- İsim -->
+       <strong><label for="fname">İsim:</label><br></strong> 
+        <input type="text" id="fname" name="fname" required><br>
+      
+        <!-- Soyisim -->
+        <strong><label for="lname">Soyisim:</label><br></strong> 
+        <input type="text" id="lname" name="lname" required><br>
+      
+        <!-- Email  -->
+       <strong><label for="email">E-posta:</label><br></strong> 
+        <input type="email" id="email" name="email" required><br>
+      
+        <!-- Şifre en az beş karakter -->
+        <strong><label for="pwd">Şifre:</label><br></strong>
+        <input type="password" id="pwd" name="pwd" minlength="5" required><br>
+      
+
+        <!-- Radio Button Input -->
+       <strong><p>Cinsiyet:</p></strong> 
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">♂</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">♀</label><br>
+      <br>
+      
+        <!-- Select Input -->
+       <strong><label for="fruit">Favori Meyve:</label><br></strong> 
+        <select id="fruit" name="fruit">
+          <option value="orange">Portakal</option>
+          <option value="apple">Elma</option>
+          <option value="strawberry">Çilek</option>
+        </select><br> <br>
+
+         <!-- Textarea Input -->
+        <strong><label for="message">Mesaj:</label><br></strong> 
+         <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+       
+      
+        <!-- Submit Button -->
+     
+       
+       <strong><input type="submit" value="Gönder"></strong> 
+       </article>
+    
+     
+
+      </form>
+</body>
+</html>
